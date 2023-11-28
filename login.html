@@ -6,15 +6,48 @@
     <title>띵동코딩 - 로그인 페이지</title>
     <style>
       .mytitle {
-        color: red;
-        font-size: 32px;
+        /* background-image, position, size 세개는 늘 붙어다님. 3개 암기 */
+        background-image: url("https://static.spartacodingclub.kr/media/main_carousel/1kq0i51tuqc2kfzp.png");
+        background-position: center;
+        background-size: cover;
+
+        width: 300px;
+        height: 250px;
+        color: white;
+
+        border-radius: 10px;
+
+        /* 밑 네줄은 자주씀 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wrap {
+        width: 300px;
+        margin: auto;
+      }
+
+      .mybtn {
+        border: none;
+        background-color: brown;
+        color: white;
+        height: 45px;
+        width: 300px;
+        border-radius: 10px;
       }
     </style>
   </head>
   <body>
-    <h1 class="mytitle">로그인 페이지</h1>
-    <p>ID: <input type="text" /></p>
-    <p>PW: <input type="password" /></p>
-    <button>로그인하기</button>
+    <div class="wrap">
+      <div class="mytitle">
+        <h1>로그인 페이지</h1>
+        <h3>코딩의 시작, 띵동코딩</h3>
+      </div>
+      <p>ID: <input type="text" /></p>
+      <p>PW: <input type="password" /></p>
+      <button class="mybtn">로그인하기</button>
+    </div>
   </body>
 </html>
