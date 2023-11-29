@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>띵동코딩 - 클론코딩</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&family=Jua&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap");
+      * {
+        font-family: "Jua", sans-serif;
+      }
       .gnb {
         display: flex;
         flex-direction: row;
@@ -20,7 +24,7 @@
       .main {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
         padding-top: 60px;
@@ -39,9 +43,6 @@
         font-size: 46px;
         font-weight: 800;
         color: #26343d;
-        line-height: 1.4;
-        text-align: center;
-        color: #26343d;
       }
 
       .main > img {
@@ -51,6 +52,53 @@
       hr {
         border-top: none;
         border-bottom: 0.5px solid lightgray;
+      }
+
+      .cta {
+        background-color: white;
+        width: 1200px;
+        height: 80px;
+
+        border-radius: 8px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        bottom: 20px;
+        left: calc(50% - 600px);
+
+        box-shadow: 0px 0px 10px 0px lightgray;
+      }
+
+      .cta > p {
+        font-size: 20px;
+        margin-left: 120px;
+
+        font-weight: 500px;
+      }
+
+      .cta > p > span {
+        color: #ff773c;
+      }
+
+      .cta > button {
+        width: 300px;
+        height: 60px;
+
+        margin-right: 120px;
+        background-color: #ff773c;
+        border: none;
+
+        border-radius: 8px;
+
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+
+        cursor: pointer;
       }
     </style>
   </head>
@@ -68,6 +116,10 @@
       <img
         src="https://media-sparta.s3.ap-northeast-2.amazonaws.com/media/images/hero.png"
       />
+    </div>
+    <div class="cta">
+      <p><span>첫 달 만 원</span> 혜택 특별 연장, 선착순 100명 한정!</p>
+      <button>만 원으로 시작하기</button>
     </div>
   </body>
 </html>
