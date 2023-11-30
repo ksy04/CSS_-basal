@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>띵동코딩 - 로그인</title>
+    <title>띵동코딩 - 회원가입</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@200&family=Jua&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,200&family=Poppins&display=swap");
+      @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
       * {
-        font-family: "Hahmlet", serif;
+        font-family: "Pretendard", serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
       }
       .wrap {
         display: flex;
@@ -16,34 +20,79 @@
         justify-content: center;
         align-items: center;
 
-        width: 300px;
         margin: 70px auto auto auto;
+        width: 300px;
         padding: 80px 50px 50px 50px;
-
-        border: 1px solid lightgray;
         border-radius: 8px;
+        border: 1px solid rgb(219, 221, 224);
       }
       .wrap > img {
+        margin-right: auto;
         width: 90px;
         height: 46px;
-        margin-bottom: 30px;
-
-        margin-right: auto;
+        margin-bottom: 15px;
       }
-
       .wrap > p {
-        margin-right: 150px;
-        margin-bottom: 55px;
+        margin-right: auto;
+        font-size: 24px;
+        line-height: 1.5;
+      }
+      .wrap > button {
+        width: 320px;
+        height: 60px;
+        background-color: rgb(255, 226, 55);
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        border: none;
+        margin-top: 60px;
+        margin-bottom: 30px;
+      }
+      .wrap > span {
+        font-size: 14px;
+        color: rgb(38, 52, 61);
+        cursor: pointer;
       }
 
-      .wrap > button {
-        background-color: yellow;
-        border-radius: 8px;
-        margin-bottom: 30px;
-        border: none;
+      .wrap > div {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-        height: 50px;
-        width: 290px;
+      .email > p {
+        font-weight: bold;
+        font-size: 16px;
+        width: 320px;
+        margin-bottom: 25px;
+      }
+
+      .email > span {
+        font-size: 14px;
+        color: rgb(38, 52, 61);
+      }
+
+      .email > input {
+        width: 315px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 15px;
+        border-color: gainsboro;
+      }
+
+      .email > button {
+        width: 320px;
+        height: 60px;
+        background-color: lightgray;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        border: none;
       }
     </style>
   </head>
@@ -53,12 +102,17 @@
         src="https://ddingdong.spartacodingclub.kr/images/common/logo-tb.svg"
       />
       <p>
-        매주 월요일,<br />
-        내 강의실에 찾아오는<br />
+        매주 월요일, <br />
+        내 강의실에 찾아오는 <br />
         코딩 학습지
       </p>
       <button>카카오로 1초만에 시작하기</button>
-      <span>이메일로 시작하기</span>
+      <div class="email">
+        <p>이메일</p>
+        <input type="text" placeholder="이메일 주소를 입력해주세요" /><br />
+        <button>다음</button><br />
+        <span>이메일이 기억나지 않아요.</span>
+      </div>
     </div>
   </body>
 </html>
