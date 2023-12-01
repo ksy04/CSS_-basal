@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>결혼 청첩장</title>
+    <style>
+      * {
+        font-family: "IBM Plex Sans KR", sans-serif;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      a {
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        font-weight: normal;
+      }
+      .wrap {
+        width: 350px;
+        margin: auto;
+      }
+
+      h1 {
+        background-color: pink;
+        width: 350px;
+        height: 35px;
+        padding-top: 10px;
+        color: white;
+        margin-bottom: 40px;
+      }
+
+      h1 span {
+        margin-left: 10px;
+      }
+
+      .pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 5px;
+        color: pink;
+        margin-bottom: 40px;
+      }
+
+      .pic > img {
+        width: 80%;
+        border: 2px solid pink;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .name {
+        color: pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+      }
+
+      hr {
+        width: 60%;
+        background: pink;
+        height: 1px;
+        border: 0;
+      }
+
+      .bottom {
+        margin-bottom: 50px;
+      }
+
+      .main {
+        background-color: pink;
+        color: white;
+        position: relative;
+        height: 410px;
+      }
+
+      .main1 > p > span {
+        margin-top: 20px;
+      }
+      p {
+        margin-bottom: 25px;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main_bottom2 {
+        margin-top: 30px;
+      }
+      .main_left {
+        padding-left: 15px;
+        line-height: 2;
+      }
+
+      .bottom_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 20px;
+        color: pink;
+      }
+
+      .name_coment {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #name {
+        width: 270px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        border-radius: 2px;
+        border: 1px solid black;
+      }
+
+      #coment {
+        width: 270px;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        border: 1px solid black;
+      }
+
+      .comment_buttom {
+        width: 170px;
+        height: 45px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        background-color: pink;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1><span>영희와 철수의 첫 시작을 축하해주세요</span></h1>
+      <div class="pic">
+        Save The Date<br /><img src="wadding.png" />12.31.SUNDAY.PM.12:30
+      </div>
+      <hr />
+      <div class="name">김영희 & 이철수</div>
+      <hr / class="bottom">
+      <div class="main">
+        <div class="main1">
+          <p><span>INVITATION</span></p>
+          <span>
+            <div class="main_left">
+              서로 다른 두 사람이 만나<br />사랑으로 하나 되는 자리에<br />
+              소중한 여러분들을 초대합니다.<br />기쁠 때나, 슬플 때나<br />서로를
+              사랑으로 품으며<br />행복의 계단을 쌓아가겠습니다.<br />저희의 첫
+              시작을 함께 해주신다면<br />
+              감사한 마음 깊이 간직하며 잘 살겠습니다.
+            </div>
+          </span>
+        </div>
+
+        <div class="main_bottom1">
+          <p>
+            2023. 12. 31. SUN. PM 12:30<br />
+            <span>스파르타웨딩 르탄홀</span>
+          </p>
+        </div>
+      </div>
+      <div class="bottom">
+        <span class="bottom_title">축하메시지를 남겨주세요</span>
+        <div class="name_coment">
+          <input type="text" id="name" placeholder="이름" />
+          <textarea
+            cols="35"
+            rows="6"
+            id="coment"
+            placeholder="메시지를 남겨주세요"
+          ></textarea>
+          <button class="comment_buttom">메시지 남기기</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
