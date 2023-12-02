@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>띵동코딩-Fetch 연습</title>
+    <style>
+        .wrap {
+            width: 300px;
+            margin: auto;
+        }
+
+        .wrap>h1 {
+            text-align: center;
+        }
+
+        .wrap>button {
+            display: block;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .movieList {
+            width: 300px;
+            height: 400px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .movieList>div {
+            float: left;
+        }
+    </style>
+    <script>
+        let cnt = 0;
+        function movieReviews() {
+            let url = 'http://spartacodingclub.shop/post'
+            fetch(url).then(res => res.json()).then((data) => {
+                let rows = data["articles"]
+                let img = rows[cnt]['image'];
+                    let title = rows[cnt]['title'];
+                    let comment = rows[cnt]['comment'];
+                    let temp_html = `
+                            <span> <img id="moviesPic" width="300" src='${img}' />
+                            <h2 id="movieTitle">${title}</h2>
+                            <div id="movieComment">${comment}</div></span>`
+                    $('#movieList').append(temp_html);
+                    cnt=cnt+1
+            });
+
+
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <h1>영화 버킷 리스트</h1>
+        <button onclick="movieReviews()">확인</button>
+    </div>
+    <div id="movieList" class="movieList">
+        </div>
+    </div>
+
+</body>
+
+</html>
